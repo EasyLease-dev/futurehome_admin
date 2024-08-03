@@ -1,0 +1,20 @@
+.manage-users {
+    padding: 20px;
+  }
+  
+  .manage-users table {
+    margin-bottom: 20px;
+  }
+  
+  .manage-users form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  

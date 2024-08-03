@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #root {
+    display: flex;
+    height: 100vh; /* Ensure the root element takes up the full height */
+    overflow: hidden; /* Prevent scrolling issues */
+  }
+  
+  .MuiAppBar-root {
+    z-index: 1201; /* Ensure the header is above the sidebar */
+    position: fixed; /* Keep the header fixed at the top */
+    width: 100%; /* Ensure the header spans the full width */
+  }
+  
+  .MuiDrawer-paper {
+    z-index: 1200; /* Ensure the sidebar is below the header */
+    width: 240px; /* Ensure the width matches the sidebar width */
+    height: calc(100vh - 64px); /* Ensure the sidebar height matches the viewport minus the header */
+    margin-top: 64px; /* Position below the fixed header */
+  }
+  
+  .toggle-button {
+    margin-left: 16px; /* Ensure there's space between the button and the edge */
+  }
+  
+  .active-link {
+    background-color: rgba(0, 0, 0, 0.08); /* Example active link background */
+    color: #1976d2; /* Example active link color */
+  }
+  
+  .MuiListItem-button:hover {
+    background-color: rgba(0, 0, 0, 0.04); /* Example hover background */
+  }
+  

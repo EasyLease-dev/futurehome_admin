@@ -1,0 +1,13 @@
+.sidebar .MuiDrawer-paper {
+    width: 240px;
+    background-color: #f0f0f0; /* Adjust based on your design */
+  }
+  
+  .sidebar .MuiListItem-root {
+    padding: 10px 20px;
+  }
+  
+  .sidebar .MuiListItemIcon-root {
+    min-width: 40px;
+  }
+  
