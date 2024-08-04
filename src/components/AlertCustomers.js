@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, MenuItem, Snackbar } from '@mui/material';
 import axios from 'axios';
+import { Description, Subject } from '@mui/icons-material';
 
 const AlertCustomerPage = () => {
   const [customer, setCustomer] = useState({
@@ -8,6 +9,8 @@ const AlertCustomerPage = () => {
     role: '',
     phoneNumber: '',
     email: '',
+    Subject: '',
+    Description: ''
   });
 
   const [snackbarOpen, setSnackbarOpen] = useState(false);
@@ -73,6 +76,22 @@ const AlertCustomerPage = () => {
           label="Email"
           name="email"
           value={customer.email}
+          onChange={handleInputChange}
+          fullWidth
+          sx={{ mb: 2 }}
+        />
+        <TextField
+          label="Subject"
+          name="subject"
+          value={customer.email}
+          onChange={handleInputChange}
+          fullWidth
+          sx={{ mb: 2 }}
+        />
+        <TextField
+          label="Description"
+          name="description"
+          value={customer.Description}
           onChange={handleInputChange}
           fullWidth
           sx={{ mb: 2 }}

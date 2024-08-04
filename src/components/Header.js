@@ -49,7 +49,7 @@ function Header({ toggleSidebar }) {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Nilamadhaba</MenuItem>
+            <MenuItem onClick={handleClose}>Arya</MenuItem>
             {/* <MenuItem onClick={handleClose}>My account</MenuItem> */}
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
